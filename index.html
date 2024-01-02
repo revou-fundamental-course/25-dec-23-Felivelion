@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="logo">Katik</h1>
+        <h4 id="Pembuka">Membantumu menghitung luas dan keliling segitiga :D</h4>
+    </header>
+    <div id="div1">
+        <img src="Rumus Segitiga.jpg">
+    </div>
+    <section class="input-wide-section">
+        <label for="input-luas-atau-keliling">Apa Yang Ingin Kamu Hitung?</label>
+        <select name="luas-or-keliling" id="select luas-or-keliling">
+            <option value="Luas">Luas</option>
+            <option value="Keliling">Keliling</option>
+        </select>
+        <label for="input-tinggi" id="label tinggi">Tinggi</label>
+        <input type="number" id="input-tinggi" class="Katik-input">
+        <label for="input-alas" id="label alas">Alas</label>
+        <input type="number" id="input-alas" class="Katik-input">
+        <div class="buttons">
+            <button>Hitung</button>
+            <button>Reset</button>
+        </div>
+        <div id="output"></div>
+    </section>    
+</body>
+</html>

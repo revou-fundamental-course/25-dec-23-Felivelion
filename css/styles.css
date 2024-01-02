@@ -1,0 +1,87 @@
+body {
+    background-color:beige;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#div1 {
+    display: flex;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    justify-content: center;
+    height: 200px;
+}
+
+#logo {
+    display: flex;
+    background-color: orange;
+    background-size: auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#Pembuka {
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+
+/* INPUT SECTION */
+
+.input-wide-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+label {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.Katik-input {
+    outline: none;
+    border-radius: 10px;
+    padding: 6px;
+    border: 1px solid orange;
+}
+
+.Katik-input:focus {
+    border: 1px solid black;
+}
+
+select {
+    display: flex;
+    height: 25px;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+
+select:focus {
+    border: 1px solid darkorange;
+}
+
+.buttons {
+    display: flex;
+    align-self: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+button {
+    background-color:darkorange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(186, 103, 1);
+}
+
+button:active {
+    background-color:  rgb(70, 39, 1);
+    transform: translateY(1px);
+}
