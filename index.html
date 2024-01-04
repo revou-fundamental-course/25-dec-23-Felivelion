@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEMO Kalkulator Segitiga</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="./js/script.js"></script>
 </head>
 <body>
     <header>
@@ -13,23 +12,34 @@
         <h4 id="Pembuka">Membantumu menghitung luas dan keliling segitiga :D</h4>
     </header>
     <div id="div1">
-        <img src="Rumus Segitiga.jpg">
+        <img src="asset/Rumus Segitiga.jpg">
     </div>
-    <section class="input-wide-section">
-        <label for="input-luas-atau-keliling">Apa Yang Ingin Kamu Hitung?</label>
-        <select name="luas-or-keliling" id="select luas-or-keliling">
-            <option value="Luas">Luas</option>
-            <option value="Keliling">Keliling</option>
-        </select>
-        <label for="input-tinggi" id="label tinggi">Tinggi</label>
-        <input type="number" id="input-tinggi" class="Katik-input">
-        <label for="input-alas" id="label alas">Alas</label>
-        <input type="number" id="input-alas" class="Katik-input">
+    <form class="input-wide-section">
+        <h2 id="judul">Menghitung Luas</h2>
+        <label for="input-tinggi">Tinggi</label>
+        <input type="number" id="tinggi" placeholder="Masukkan angka..." class="Katik-input" required>
+        <label for="input-alas">Alas</label>
+        <input type="number" id="alas" placeholder="Masukkan angka..."  class="Katik-input" required>
         <div class="buttons">
-            <button>Hitung</button>
-            <button>Reset</button>
+            <button id="hitung">Hitung</button>
+            <button id="reset">Reset</button>
         </div>
-        <div id="output"></div>
-    </section>    
+        <p id="output"></p>
+    </form>   
+    <form class="input-round-section">
+        <h2 id="judul">Menghitung Keliling</h2>
+        <label for="input-sisi1">Panjang a</label>
+        <input type="number" id="sisi1" placeholder="Masukkan angka..." class="Katik-input" required>
+        <label for="input-sisi2">Panjang b</label>
+        <input type="number" id="sisi2" placeholder="Masukkan angka..." class="Katik-input" required>
+        <label for="input-sisi3">Panjang c</label>
+        <input type="number" id="sisi3" placeholder="Masukkan angka..." class="Katik-input" required>
+        <div class="buttons">
+            <button id="hitung-keliling">Hitung</button>
+            <button id="reset-keliling">Reset</button>
+        </div>
+        <p id="output-keliling"></p>
+    </form> 
 </body>
+<script src="js/script.js"></script>
 </html>
