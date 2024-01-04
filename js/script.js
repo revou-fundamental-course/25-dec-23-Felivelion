@@ -1,4 +1,4 @@
-function hitungLuas(e){
+function hitungluas(e){
 e.preventDefault();
     const alas = document.getElementById('alas');
     const tinggi = document.getElementById('tinggi');
@@ -9,9 +9,9 @@ e.preventDefault();
     let l = 0.5*a*t;
     output.innerText += `Luas Segitiga tersebut adalah ${l} cm2`;
 }
-document.getElementById('hitung').addEventListener('click', hitungLuas);
+document.getElementById('hitung').addEventListener('click', hitungluas);
 
-function hitungKeliling(e){
+function hitungkeliling(e){
 e.preventDefault();
     const sisi1 = document.getElementById('sisi1');
     const sisi2 = document.getElementById('sisi2');
@@ -24,7 +24,7 @@ e.preventDefault();
     let k = parseInt(s1)+parseInt(s2)+parseInt(s3);
     output.innerText += `Keliling Segitiga tersebut adalah ${k} cm`;
 }
-document.getElementById('hitung-keliling').addEventListener('click', hitungKeliling);
+document.getElementById('hitung-keliling').addEventListener('click', hitungkeliling);
 
 function reset(){
     document.getElementById('reset').addEventListener('click', reset);
